@@ -1,0 +1,3 @@
+hrs=int(input("enter hours "))
+min=hrs*60
+print("no. of minutes = ",min)
