@@ -1,0 +1,25 @@
+sno=int(input("enter sno : "))
+sname=input("enter sname : ")
+grp=input("enter group : ")
+s1=int(input("enter s1 marks : "))
+s2=int(input("enter s2 marks : "))
+s3=int(input("enter s3 marks : "))
+total=s1+s2+s3
+avg=total/3
+print("**student details**\n----------------")
+print("student number : ",sno)
+print("student name : ",sname)
+print("student group : ",grp)
+print("s1 marks = ",s1)
+print("s2 marks = ",s2)
+print("s3 marks = ",s3)
+if avg>=90:
+    print("grade = Distinction")
+elif avg>=70:
+    print("grade = First class")
+elif avg>=50:
+    print("grade = second class")
+elif avg>=40:
+    print("grade = Third class")
+else:
+    print("grade = pass")
