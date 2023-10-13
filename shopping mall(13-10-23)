@@ -1,0 +1,29 @@
+skirt=500
+pants=800
+shirt=400
+saree=1000
+print("****welcome to abc shopping mall****")
+cname=input("Enter customer name : ")
+cphn=input("Enter customer phone number : ")
+skirtq=int(input("enter no.of skirts : "))
+pantsq=int(input("enter no.of pants : "))
+shirtq=int(input("enter no.of shirt : "))
+sareeq=int(input("enter no.of saree : "))
+bill=(skirt*skirtq)+(pants*pantsq)+(shirt*shirtq)+(saree*sareeq)
+if bill>=2500:
+    dis=bill-15/100
+elif bill>=2000:
+    dis=bill-13/100
+elif bill>=1500:
+    dis=bill-11/100
+elif bill>=1200:
+    dis=bill-8/100
+else:
+    dis=0
+price=bill-dis
+gst=price*(8/100)
+amt=price+gst
+print("customer name : ",cname)
+print("customer phn number : ",cphn)
+print("bill to be paid : ",amt)
+print("thanq!")
