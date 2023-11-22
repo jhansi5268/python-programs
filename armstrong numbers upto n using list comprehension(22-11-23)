@@ -1,0 +1,16 @@
+def armstrong(num):
+    temp=num
+    sum=0
+    while temp > 0:
+        digit = temp % 10
+        sum += digit ** 3
+        temp //= 10
+    if num==sum:
+        return sum
+    else:
+        return False
+    
+num=int(input())
+l=[i for i in range(1,num+1) if armstrong(i)]
+for j in l:
+    print(j,end=' ')
