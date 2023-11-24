@@ -1,0 +1,25 @@
+#substaction of two numbers
+def mysub():
+    l1=int(num1.get())
+    l2=int(num2.get())
+    sub=l1-l2
+    sub= "sub:"+str(sub)
+    res.config(text=sub)
+from tkinter import*
+sub=Tk()
+sub.title("substaction of 2 numbers")
+l1=Label(sub,text="Enter first number:")
+num1=Entry(sub)
+l2=Label(sub,text="Enter second number:")
+num2=Entry(sub)
+b=Button(sub,text="submit",command=mysub)
+res=Label(sub,text="Result:")
+l1.grid(row=0,column=0)
+num1.grid(row=0,column=1)
+l2.grid(row=1,column=0)
+num2.grid(row=1,column=1)
+
+b.grid(row=2,column=0)
+res.grid(row=2,column=1)
+
+sub.mainloop()
